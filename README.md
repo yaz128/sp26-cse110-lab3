@@ -1,2 +1,4 @@
-# Lab 2 - Starter
-Published site: https://yaz128.github.io/Lab2_Starter/ 
+# Lab 3
+
+GitHub Pages Link:
+https://yaz128.github.io/sp26-cse110-lab3/
