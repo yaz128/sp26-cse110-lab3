@@ -1,0 +1,14 @@
+Fill in the passphrases here.
+Passcode for qeustion 1: WrongAvery
+Passcode for qeustion 2: iHateC++
+Passcode for qeustion 3: HTMLRules
+Passcode for qeustion 4: JavaScriptRocks
+Passcode for qeustion 5: ShraviBeatsReact
+Passcode for qeustion 6: ThisIsJay
+Passcode for qeustion 7: SofiaWasHere
+Passcode for qeustion 8: coolcoolcool3x
+Passcode for qeustion 9: 2020_sucked
+Passcode for qeustion 10: listenToPetalcore
+Passcode for qeustion 11: ElaineFirst
+Passcode for qeustion 12: iHeartWebDev
+

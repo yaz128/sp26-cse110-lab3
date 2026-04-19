@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting minutes for Pomodoro Timer First Brainstorm">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer Meeting Minutes</title>
+  </head>
+  <body>
+    <header>
+      <h1>Lab2 - HTML and DevTools</h1>
+      <p><strong>Topic:</strong> Lab2 - HTML and DevTools</p>
+      <p><strong>Date:</strong> April 10, 2026</p>
+
+      <nav>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#comments">Comments</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#form">Feedback Form</a></li>
+        </ul>
+      </nav>
+
+      <hr>
+    </header>
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <div>
+          <p>The following team members attended the meeting:</p>
+          <ul>
+            <li>Yang Zou</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <p>Today we discuss how to use HTML and DevTools</p>
+        <ol>
+          <li>Learn basic HTML structure</li>
+          <li>Understand common HTML tags</li>
+          <li>Use DevTools to inspect webpage</li>
+        </ol>
+      </section>
+
+      <section id="comments">
+        <h2>Comments / Questions</h2>
+        <ul>
+            <li>HTML is not very hard but need practice</li>
+            <li>DevTools is useful for debugging</li>
+            <li>I need more practice with HTML tags</li>
+        </ul>
+      </section>
+
+      <section id="media">
+        <h2>Pictures and Media</h2>
+
+        <h3>Photo</h3>
+        <p>Below is a tree under the sunset</p>
+        <img src="images/photo.webp" alt="tree under sunset" width="300">
+
+        <h3>Audio Recording</h3>
+        <audio controls>
+          <source src="audio/notitle.m4a" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Recording</h3>
+        <video controls width="320">
+          <source src="video/video.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+      <section>
+        <h2>Action Items</h2>
+        <ol>
+          <li>Yang will write the first HTML draft.</li>
+        </ol>
+      </section>
+
+      <section id="form">
+        <h2>Lab 2 Feedback Form</h2>
+        <form>
+          <fieldset>
+            <legend>Share your feedback</legend>
+
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+            </p>
+
+            <p>
+              <label for="date">Meeting Date:</label>
+              <input type="date" id="date" name="date">
+            </p>
+
+            <p>Was this lab helpful?</p>
+            <p>
+              <input type="radio" id="helpful-yes" name="helpful" value="yes">
+              <label for="helpful-yes">Yes</label>
+
+              <input type="radio" id="helpful-no" name="helpful" value="no">
+              <label for="helpful-no">No</label>
+            </p>
+
+            <p>What topics do you want next time?</p>
+            <p>
+              <input type="checkbox" id="ui" name="topics" value="ui">
+              <label for="ui">UI Design</label>
+
+              <input type="checkbox" id="features" name="topics" value="features">
+              <label for="features">Features</label>
+
+              <input type="checkbox" id="testing" name="topics" value="testing">
+              <label for="testing">Testing</label>
+            </p>
+
+            <p>
+              <label for="role">Choose your role:</label>
+              <input list="roles" id="role" name="role">
+              <datalist id="roles">
+                <option value="Frontend Developer"></option>
+                <option value="Backend Developer"></option>
+                <option value="Designer"></option>
+                <option value="Project Manager"></option>
+              </datalist>
+            </p>
+
+            <p>
+              <label for="favorite-feature">Favorite part of this lab:</label>
+              <select id="favorite-feature" name="favorite-feature">
+                <option value="html">HTML</option>
+                <option value="devtools">DevTools</option>
+                <option value="form">Form</option>
+                <option value="media">Media</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="feedback">Additional comments:</label>
+            </p>
+            <p>
+              <textarea id="feedback" name="feedback" rows="4" cols="40"></textarea>
+            </p>
+
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <p>Created for CSE 110 Lab 2 HTML and DevTools practice.</p>
+    </footer>
+  </body>
+</html>
