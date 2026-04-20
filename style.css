@@ -3,3 +3,82 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
 }
+/* ===== Color + Text Styling ===== */
+
+/* CSS variable with fallback */
+:root {
+  --main-color: #2c3e50;
+}
+
+/* universal selector */
+* {
+  box-sizing: border-box;
+}
+
+/* element selector */
+body {
+  background-color: #f5f5f5;          
+  color: rgb(40, 40, 40);             
+  text-align: left;
+}
+
+/* id selector */
+#main-title {
+  color: var(--main-color, blue);     
+}
+
+/* class selector */
+.highlight {
+  color: orange;                      
+}
+
+/* hsl + rgba */
+h1 {
+  color: hsl(210, 60%, 35%);
+  text-decoration: underline;
+}
+
+p {
+  color: rgba(20, 20, 20, 0.9);
+}
+
+/* ===== Box Model ===== */
+
+/* section styling */
+section {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+
+  padding: 1rem 2rem 1rem 2rem;
+
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+
+  border-radius: 12px;
+}
+
+/* shorthand margin */
+header {
+  margin: 20px auto;
+}
+
+/* shorthand padding */
+main {
+  padding: 20px;
+}
+
+/* sizing */
+main {
+  width: 80%;
+  max-width: 1000px;
+  min-width: 300px;
+}
+
+/* extra example */
+img {
+  height: auto;
+  width: 300px;
+}
