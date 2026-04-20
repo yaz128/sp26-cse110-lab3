@@ -149,3 +149,25 @@ nav a:hover {
 nav a:active {
   color: green;
 }
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 768px) {
+
+  main {
+    width: 95%;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .agenda-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
