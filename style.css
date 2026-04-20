@@ -70,7 +70,7 @@ h2 {
 /* wider gamut color examples */
 .color-test {
   color: color-mix(in srgb, red 45%, blue 55%);
-  background-color: color(display-p3 0.90 0.95 1);
+  background-color: #e6f2ff;
   padding: 0.5rem;
   border-radius: 8px;
 }
@@ -278,15 +278,13 @@ section:has(h2) {
 }
 
 /* nested selector (new selector) */
-.media-panel {
-  & h3 {
-    color: #2d4f73;
-    margin-left: 0.2em;
-  }
+.media-panel h3 {
+  color: #2d4f73;
+  margin-left: 0.2em;
+}
 
-  & p {
-    font-size: 1.05em;
-  }
+.media-panel p {
+  font-size: 1.05em;
 }
 
 /* another absolute + relative unit usage */
