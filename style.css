@@ -82,3 +82,70 @@ img {
   height: auto;
   width: 300px;
 }
+
+/* ===== Layout (Flexbox + Grid + Display + Position) ===== */
+
+/* NAV FLEXBOX */
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+/* FLEXBOX for attendance */
+.attendance-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* GRID layout */
+.agenda-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* display examples */
+footer {
+  display: block;
+}
+
+nav a {
+  display: inline-block;
+  padding: 5px;
+}
+
+/* hide something example */
+audio {
+  display: none;
+}
+
+/* POSITIONING */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+/* absolute example */
+img {
+  position: relative;
+}
+
+img::after {
+  content: "";
+  position: absolute;
+}
+
+/* PSEUDO CLASSES */
+nav a:hover {
+  color: red;
+}
+
+nav a:active {
+  color: green;
+}
