@@ -1,89 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Meeting minutes for Pomodoro Timer First Brainstorm">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Meeting minutes for Pomodoro Timer First Brainstorm"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro Timer Meeting Minutes</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- 3rd party font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- internal css example -->
+    <style>
+      .internal-note {
+        background-color: #eef6ff;
+        border: 1px dashed #4a6fa5;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1 id="main-title">Lab2 - HTML and DevTools</h1>
-      <p><strong>Topic:</strong> Lab2 - HTML and DevTools</p>
+    <header class="page-header">
+      <h1 id="main-title">Lab 2 - HTML and DevTools</h1>
+      <p><strong>Topic:</strong> Lab 2 - HTML and DevTools</p>
       <p><strong>Date:</strong> April 10, 2026</p>
 
-      <nav>
+      <p class="internal-note" style="color: #b22222;">
+        This paragraph uses both internal CSS and inline CSS.
+      </p>
+
+      <nav aria-label="Main navigation">
         <ul class="nav-list">
           <li><a href="#attendance">Attendance</a></li>
           <li><a href="#agenda">Agenda</a></li>
           <li><a href="#comments">Comments</a></li>
           <li><a href="#media">Media</a></li>
+          <li><a href="#action-items">Action Items</a></li>
           <li><a href="#form">Feedback Form</a></li>
         </ul>
       </nav>
 
-      <hr>
+      <hr />
     </header>
 
     <main>
-      <section id="attendance">
+      <section id="attendance" class="card section-box">
         <h2>Attendance</h2>
         <div class="attendance-container">
-          <p class="highlight">The following team members attended the meeting:</p>
+          <p class="highlight">
+            The following team members attended the meeting:
+          </p>
           <ul class="attendance-list">
             <li>Yang Zou</li>
+            <li>Project Lead</li>
+            <li>Note Taker</li>
           </ul>
         </div>
       </section>
 
-      <section id="agenda">
+      <section id="agenda" class="card section-box">
         <h2>Agenda</h2>
-        <p>Today we discuss how to use HTML and DevTools</p>
-        <ol>
-          <li>Learn basic HTML structure</li>
-          <li>Understand common HTML tags</li>
-          <li>Use DevTools to inspect webpage</li>
+        <p>Today we discuss how to use HTML and DevTools.</p>
+        <ol class="agenda-grid">
+          <li class="grid-item">Learn basic HTML structure</li>
+          <li class="grid-item">Understand common HTML tags</li>
+          <li class="grid-item">Use DevTools to inspect webpage</li>
+          <li class="grid-item">Plan next practice steps</li>
         </ol>
       </section>
 
-      <section id="comments">
+      <section id="comments" class="card section-box">
         <h2>Comments / Questions</h2>
-        <ul>
-            <li>HTML is not very hard but need practice</li>
-            <li>DevTools is useful for debugging</li>
-            <li>I need more practice with HTML tags</li>
+        <ul class="comment-list">
+          <li>HTML is not very hard but needs practice.</li>
+          <li>DevTools is useful for debugging.</li>
+          <li>I need more practice with HTML tags.</li>
         </ul>
+        <p class="color-test">This line is here to show color-mix usage.</p>
       </section>
 
-      <section id="media">
+      <section id="media" class="card section-box media-panel">
         <h2>Pictures and Media</h2>
 
         <h3>Photo</h3>
-        <p>Below is a tree under the sunset</p>
-        <img src="images/photo.webp" alt="tree under sunset" width="300">
+        <p>Below is a tree under the sunset.</p>
+        <img
+          src="images/photo.webp"
+          alt="Tree under sunset"
+          class="media-image"
+        />
 
         <h3>Audio Recording</h3>
         <audio controls>
-          <source src="audio/notitle.m4a" type="audio/mpeg">
+          <source src="audio/notitle.m4a" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
 
         <h3>Video Recording</h3>
         <video controls width="320">
-          <source src="video/video.mp4" type="video/mp4">
+          <source src="video/video.mp4" type="video/mp4" />
           Your browser does not support the video element.
         </video>
+
+        <p class="inline-example">
+          This span is inline display example:
+          <span class="inline-chip">inline item</span>
+        </p>
       </section>
 
-      <section>
+      <section id="action-items" class="card section-box">
         <h2>Action Items</h2>
-        <ol class="agenda-grid">
-          <li>Yang will write the first HTML draft.</li>
+        <ol class="task-flex">
+          <li class="task-card">Yang will write the first HTML draft.</li>
+          <li class="task-card">Review CSS checklist carefully.</li>
+          <li class="task-card">Validate CSS before submission.</li>
         </ol>
       </section>
 
-      <section id="form">
+      <section id="form" class="card section-box form-card">
         <h2>Lab 2 Feedback Form</h2>
         <form>
           <fieldset>
@@ -91,38 +134,48 @@
 
             <p>
               <label for="name">Name:</label>
-              <input type="text" id="name" name="name">
+              <input type="text" id="name" name="name" />
             </p>
 
             <p>
               <label for="date">Meeting Date:</label>
-              <input type="date" id="date" name="date">
+              <input type="date" id="date" name="date" />
             </p>
 
             <p>Was this lab helpful?</p>
             <p>
-              <input type="radio" id="helpful-yes" name="helpful" value="yes">
+              <input type="radio" id="helpful-yes" name="helpful" value="yes" />
               <label for="helpful-yes">Yes</label>
 
-              <input type="radio" id="helpful-no" name="helpful" value="no">
+              <input type="radio" id="helpful-no" name="helpful" value="no" />
               <label for="helpful-no">No</label>
             </p>
 
             <p>What topics do you want next time?</p>
             <p>
-              <input type="checkbox" id="ui" name="topics" value="ui">
+              <input type="checkbox" id="ui" name="topics" value="ui" />
               <label for="ui">UI Design</label>
 
-              <input type="checkbox" id="features" name="topics" value="features">
+              <input
+                type="checkbox"
+                id="features"
+                name="topics"
+                value="features"
+              />
               <label for="features">Features</label>
 
-              <input type="checkbox" id="testing" name="topics" value="testing">
+              <input
+                type="checkbox"
+                id="testing"
+                name="topics"
+                value="testing"
+              />
               <label for="testing">Testing</label>
             </p>
 
             <p>
               <label for="role">Choose your role:</label>
-              <input list="roles" id="role" name="role">
+              <input list="roles" id="role" name="role" />
               <datalist id="roles">
                 <option value="Frontend Developer"></option>
                 <option value="Backend Developer"></option>
@@ -145,7 +198,12 @@
               <label for="feedback">Additional comments:</label>
             </p>
             <p>
-              <textarea id="feedback" name="feedback" rows="4" cols="40"></textarea>
+              <textarea
+                id="feedback"
+                name="feedback"
+                rows="4"
+                cols="40"
+              ></textarea>
             </p>
 
             <p>
@@ -156,9 +214,10 @@
       </section>
     </main>
 
-    <footer>
-      <hr>
+    <footer class="page-footer">
+      <hr />
       <p>Created for CSE 110 Lab 2 HTML and DevTools practice.</p>
+      <p class="hidden-note">This hidden note is only for display:none.</p>
     </footer>
   </body>
 </html>
