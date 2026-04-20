@@ -171,3 +171,54 @@ nav a:active {
     font-size: 1.8rem;
   }
 }
+
+/* ===== Selectors ===== */
+
+/* selector list */
+h1, h2 {
+  font-weight: bold;
+}
+
+/* attribute selector */
+input[type="text"] {
+  border: 2px solid blue;
+}
+
+/* descendant combinator */
+section p {
+  line-height: 1.5;
+}
+
+/* child combinator */
+ul > li {
+  margin-bottom: 0.5rem;
+}
+
+/* adjacent sibling */
+h2 + p {
+  font-style: italic;
+}
+
+/* general sibling */
+h2 ~ ul {
+  color: #333;
+}
+
+/* combining selector */
+section.highlight {
+  border-width: 3px;
+}
+
+/* :has() selector */
+section:has(h2) {
+  padding-bottom: 1rem;
+}
+
+/* pseudo class again (safe extra) */
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  transform: scale(0.98);
+}
