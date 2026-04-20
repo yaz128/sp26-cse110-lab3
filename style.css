@@ -277,14 +277,9 @@ section:has(h2) {
   text-align: left;
 }
 
-/* nested selector (new selector) */
-.media-panel h3 {
-  color: #2d4f73;
-  margin-left: 0.2em;
-}
-
-.media-panel p {
-  font-size: 1.05em;
+/* nested selector example */
+section.card p {
+  color: #333;
 }
 
 /* another absolute + relative unit usage */
