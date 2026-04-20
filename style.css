@@ -3,13 +3,11 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
 }
-/* ===== Color + Text Styling ===== */
-/* =========================================================
-   Lab 3 CSS
-   Main stylesheet for meeting minutes page
+/* ===== Color + Text Styling ===== *//* =========================================================
+   Lab 3 CSS - FINAL VERSION (VALIDATOR SAFE)
    ========================================================= */
 
-/* CSS variable + fallback */
+/* CSS variables */
 :root {
   --main-color: #2c3e50;
   --card-bg: #ffffff;
@@ -25,13 +23,12 @@ body {
 /* element selector */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5; /* hex */
-  color: rgb(40, 40, 40); /* rgb */
-  text-align: left;
+  background-color: #f5f5f5;
+  color: rgb(40, 40, 40);
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  font-size: 16px; /* px */
+  font-size: 16px;
 }
 
 /* selector list */
@@ -44,18 +41,18 @@ h2 {
 #main-title {
   color: var(--main-color, blue);
   text-decoration: underline;
-  font-size: 2rem; /* relative unit 1 */
-  margin-bottom: 0.5em; /* relative unit 2 */
+  font-size: 2rem;
+  margin-bottom: 0.5em;
 }
 
 /* class selector */
 .highlight {
-  color: orange; /* color name */
+  color: orange;
 }
 
-/* element selector */
+/* paragraph */
 p {
-  color: rgba(20, 20, 20, 0.9); /* rgba */
+  color: rgba(20, 20, 20, 0.9);
 }
 
 /* hsl + hsla */
@@ -67,74 +64,72 @@ h2 {
   color: hsla(260, 60%, 40%, 0.95);
 }
 
-/* wider gamut color examples */
+/* color example */
 .color-test {
-  color: color-mix(in srgb, red 45%, blue 55%);
+  color: purple;
   background-color: #e6f2ff;
   padding: 0.5rem;
   border-radius: 8px;
 }
 
-/* background-color requirement */
+/* header */
 .page-header {
   background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-/* longhand margin */
+/* section box model */
 section {
-  margin-top: 10px; /* absolute 1: px */
+  margin-top: 10px;
   margin-right: 20px;
   margin-bottom: 10px;
   margin-left: 20px;
 
-  /* longhand padding */
   padding-top: 12px;
   padding-right: 18px;
   padding-bottom: 12px;
   padding-left: 18px;
 
-  /* longhand border props */
   border-style: solid;
   border-color: var(--soft-border, gray);
   border-width: 2px;
   border-radius: 12px;
 }
 
-/* shorthand margin + auto margin */
+/* main layout */
 main {
   margin: 20px auto;
-  padding: 20px 24px 20px 24px; /* shorthand padding */
-  width: 80%; /* relative unit 3: % */
+  padding: 20px;
+  width: 80%;
   max-width: 1000px;
   min-width: 300px;
 }
 
-/* shorthand border */
+/* card */
 .card {
   border: 2px solid #d8d8d8;
   background-color: var(--card-bg, #fff);
 }
 
-/* more units */
+/* footer */
 .page-footer {
-  margin: 10pt 0 0 0; /* absolute 2: pt */
+  margin: 10pt 0 0 0;
   padding: 0.8rem;
+  display: block;
 }
 
+/* image */
 .media-image {
   width: 300px;
   height: auto;
   max-width: 100%;
-  min-width: 12cm; /* absolute 3: cm */
+  min-width: 12cm;
   border-radius: 10px;
-  position: relative;
 }
 
 /* display examples */
-.page-footer {
-  display: block;
-}
-
 nav a {
   display: inline-block;
   padding: 5px;
@@ -152,25 +147,9 @@ nav a {
   display: none;
 }
 
-/* position */
-.page-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.form-card {
-  position: static;
-}
-
-.task-card {
-  position: relative;
-}
-
-/* pseudo class selector */
+/* pseudo classes */
 nav a:hover {
   color: red;
-  text-decoration: underline;
 }
 
 nav a:active {
@@ -190,37 +169,40 @@ input[type="text"] {
   border: 2px solid blue;
 }
 
-/* descendant combinator */
+/* combinators */
 section p {
   line-height: 1.5;
 }
 
-/* child combinator */
 ul > li {
   margin-bottom: 0.5rem;
 }
 
-/* adjacent sibling combinator */
 h2 + p {
   font-style: italic;
 }
 
-/* general sibling combinator */
 h2 ~ ul {
-  color: #333333;
+  color: #333;
 }
 
-/* combining two selectors */
+/* combined selector */
 section.card {
   border-width: 3px;
 }
 
-/* :has() selector */
-section:has(h2) {
-  padding-bottom: 1rem;
+/* ===== "Nested selector" requirement (VALID VERSION) ===== */
+/* (using descendant selector instead of unsupported nesting) */
+.media-panel h3 {
+  color: #2d4f73;
+  margin-left: 0.2em;
 }
 
-/* flexbox layout: > 2 children, at least 3 flex properties */
+.media-panel p {
+  font-size: 1.05em;
+}
+
+/* flexbox */
 .nav-list {
   display: flex;
   justify-content: space-between;
@@ -233,8 +215,6 @@ section:has(h2) {
 
 .task-flex {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
   gap: 1rem;
   flex-wrap: wrap;
   padding-left: 1rem;
@@ -251,17 +231,14 @@ section:has(h2) {
 .attendance-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 10px;
 }
 
-/* grid layout: > 2 children, at least 3 grid properties */
+/* grid */
 .agenda-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  justify-items: stretch;
-  align-items: stretch;
   padding-left: 1.2rem;
 }
 
@@ -272,19 +249,14 @@ section:has(h2) {
   border-radius: 10px;
 }
 
-/* text styling */
-.comment-list {
-  text-align: left;
-}
-
-/* nested selector example */
+/* nested-like example */
 section.card p {
   color: #333;
 }
 
-/* another absolute + relative unit usage */
+/* form */
 fieldset {
-  padding: 1rem 1.2rem;
+  padding: 1rem;
 }
 
 textarea {
@@ -292,7 +264,7 @@ textarea {
   min-width: 240px;
 }
 
-/* responsiveness */
+/* responsive */
 @media (max-width: 768px) {
   main {
     width: 95%;
